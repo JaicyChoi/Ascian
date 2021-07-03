@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>고대인 대화창 생성기</title>
+</head>
+<body>
+    <header>
+        <h1><span>고대인</span> 대화창 생성기</h1>
+    </header>
+    <div class="contents">
+        <div class="gnerate_bubble">
+            <div class="capture_area">
+                <div class="bubble_img">
+                    <input type="text" class="name" placeholder="닉네임을 입력하세요(공백포함 최대 20글자)" maxlength="20">
+                    <textarea class="dialogue" placeholder="대사를 입력하세요(공백포함 최대 100글자)" onKeyup="check()"></textarea>
+                </div>
+            </div>
+        </div>
+        <button class="export_btn">Save</button>
+    </div>
+    <footer>
+        <div class="developer">
+            <p>Contact : 초코보@그라하티아 / Inven Jaicy / jaicychoi@gmail.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
