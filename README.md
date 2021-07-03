@@ -1,1 +1,1 @@
-# Ascian
+# Ascian Speech Bubble Generator
