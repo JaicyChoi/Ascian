@@ -1,0 +1,49 @@
+@media screen and (max-width:633px){
+    header{
+        margin: 90px 0 55px 0;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    .capture_area{
+        width: 97%;
+    }
+    .name{
+        left: 37px;
+        font-size: 1em;
+    }
+    .dialogue{
+        left: 37px;
+        margin-top: 37px;
+        font-size: 1em;
+    }
+    .export_btn{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:520px){
+    header{
+        margin: 75px 0 50px 0;
+    }
+    h1{
+        font-size: 2.3em;
+    }
+    .name{
+        left: 35px;
+        font-size: 0.9em;
+        width: 60%;
+    }
+    .dialogue{
+        left: 35px;
+        margin-top: 35px;
+        font-size: 0.9em;
+        width: 82%;
+        min-width: 82%;
+        height: 44%;
+        min-height: 44%;
+        max-height: 44%;
+    }
+    .export_btn{
+        margin-top: 25px;
+    }
+}
