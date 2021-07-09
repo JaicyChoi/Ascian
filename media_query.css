@@ -8,17 +8,21 @@
     .capture_area{
         width: 97%;
     }
-    .name{
-        left: 37px;
+    .select_bubble ul{
+        width: 270px;
         font-size: 1em;
     }
-    .dialogue{
-        left: 37px;
-        margin-top: 37px;
+    .name{
+        left: 40px;
         font-size: 1em;
+    }
+    .dialogue, .normal_dialogue{
+        left: 40px;
+        margin-top: 37px;
+        font-size: 0.968em;
     }
     .export_btn{
-        margin-top: 40px;
+        margin-top: 35px;
     }
 }
 @media screen and (max-width:520px){
@@ -28,14 +32,18 @@
     h1{
         font-size: 2.3em;
     }
+    .select_bubble ul{
+        width: 250px;
+        font-size: 0.95em;
+    }
     .name{
         left: 35px;
         font-size: 0.9em;
         width: 60%;
     }
-    .dialogue{
+    .dialogue, .normal_dialogue{
         left: 35px;
-        margin-top: 35px;
+        margin-top: 33px;
         font-size: 0.9em;
         width: 82%;
         min-width: 82%;
@@ -44,6 +52,10 @@
         max-height: 44%;
     }
     .export_btn{
-        margin-top: 25px;
+        margin-top: 15px;
+    }
+    footer{
+        margin-top: 65px;
+        font-size: 0.83em;
     }
 }

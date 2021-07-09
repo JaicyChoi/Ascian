@@ -1,1 +1,1 @@
-# Ascian Speech Bubble Generator
+# FFXIV Speech Bubble Generator

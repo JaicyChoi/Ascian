@@ -4,7 +4,7 @@ body{
     position: relative;
     float: left;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 /*     background-color: rgb(42, 49, 59); */
     background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(bg.png) no-repeat center 15%;
     background-color: black;
@@ -36,14 +36,41 @@ span{
     position: relative;
     float: left;
     width: 100%;
+/*     background-color: red; */
 }
-.gnerate_bubble{
+.select_bubble{
     position: relative;
     float: left;
+/*     background-color: white; */
     width: 100%;
+    margin-bottom: 13px;
+}
+.select_bubble ul{
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+/*     background-color: green; */
+    width: 300px;
+    font-size: 1em;
+    font-weight: 500;
+}
+.generate_bubble{
+    position: relative;
+    float: left;
+/*     width: 650px; */
+    left: 50%;
+    transform: translateX(-50%);
 /*     background-color: blue; */
 }
-.capture_area{
+.capture_bubble{
+    position: relative;
+    float: left;
+/*     background-color: red; */
+}
+.ascian_capture_area{
     position: relative;
     float: left;
 /*     background-color: red; */
@@ -52,16 +79,47 @@ span{
     height: 165px;
     transform: translateX(-50%);
 }
-.bubble_img{
+.normal_capture_area{
+    position: relative;
+    float: left;
+/*     background-color: red; */
+    left: 50%;
+    width: 655px;
+    height: 150px;
+    transform: translateX(-50%);
+}
+.ascian_bubble_img{
     position: relative;
     float: left;
     width: 100%;
     /* left: 50%;
     transform: translateX(-50%); */
 /*     background-color: gray; */
+    display: none;
 }
-.bubble_img img{
+.ascian_bubble_img.show{
+    display: block;
+}
+.ascian_bubble_img img, .normal_bubble_img img{
     width: 100%;
+}
+.normal_bubble_img{
+    position: relative;
+    float: left;
+    width: 100%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+/*     background-color: gray; */
+    display: none;
+}
+.normal_bubble_img.show{
+    display: block;
+}
+.btn_wrapper{
+    position: relative;
+    float: left;
+    width: 100%;
+/*     background-color: red; */
 }
 .export_btn{
     position: relative;
@@ -89,12 +147,12 @@ span{
     background: transparent;
     border: none;
     color: white;
-    font-size: 1.15625em;
+    font-size: 1.16875em;
     letter-spacing: 1.15px;
     font-family: 'Noto Sans KR', sans-serif;
 /*     background-color: red; */
     width: 63.1911%;
-    left: 40px;
+    left: 41px;
     margin-top: 6px;
     font-weight: 400;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -121,11 +179,11 @@ input:focus::-webkit-input-placeholder{
     background: transparent;
     border: none;
     color: #ff3178;
-    font-size: 1.125em;
+    font-size: 1.16875em;
     letter-spacing: 1.15px;
     font-family: 'Noto Sans KR', sans-serif;
-    left: 40px;
-    margin-top: 40px;
+    left: 41px;
+    margin-top: 39px;
     width: 85.3080%;
     min-width: 85.3080%;
     height: 48.4848%;
@@ -147,25 +205,49 @@ textarea:focus::-webkit-input-placeholder{
     color:transparent;
     text-shadow: none;
 }
-.dialogue.click{
+.dialogue.click, .normal_dialogue.click{
     border: white;
 }
-footer{
+.normal_dialogue{
     position: absolute;
+    float: left;
+    background: transparent;
+    border: none;
+    font-size: 1.16875em;
+    letter-spacing: 1.15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    left: 41px;
+    margin-top: 38px;
+    width: 85.3080%;
+    min-width: 85.3080%;
+    height: 48.4848%;
+    min-height: 48.4848%;
+    max-height: 48.4848%;
+    font-weight: 500;
+    overflow: hidden;
+}
+.normal_dialogue::placeholder{
+    color: black;
+}
+footer{
+    position: relative;
     float: left;
     width: 100%;
     color:white;
     font-weight: 300;
-    font-size: 0.875em;
-    background-color: rgb(149 243 255 / 30%);
-    bottom: 0;
+    font-size: 0.9em;
+/*     background-color: rgb(149 243 255 / 30%); */
+/*     bottom: 0; */
+    margin-top: 70px;
+    height: 25px;
 }
 .developer{
-/*     background-color: black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25px;
+/*     display: flex;
+    align-items: center; */
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
     letter-spacing: 0.3px;
     text-shadow: 0px 0px 5px #00fff7, 0px 0px 3px #00827e, 0px 0px 1px #003c3b;
 }
