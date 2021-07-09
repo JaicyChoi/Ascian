@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 
 body{
     position: relative;
@@ -147,14 +147,14 @@ span{
     background: transparent;
     border: none;
     color: white;
-    font-size: 1.16875em;
+    font-size: 1.165em;
     letter-spacing: 1.15px;
     font-family: 'Noto Sans KR', sans-serif;
 /*     background-color: red; */
     width: 63.1911%;
     left: 41px;
     margin-top: 6px;
-    font-weight: 400;
+    font-weight: 500;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 /*     transition: 0.3s ease; */
 }
@@ -179,7 +179,7 @@ input:focus::-webkit-input-placeholder{
     background: transparent;
     border: none;
     color: #ff3178;
-    font-size: 1.16875em;
+    font-size: 1.165em;
     letter-spacing: 1.15px;
     font-family: 'Noto Sans KR', sans-serif;
     left: 41px;
@@ -189,7 +189,7 @@ input:focus::-webkit-input-placeholder{
     height: 48.4848%;
     min-height: 48.4848%;
     max-height: 48.4848%;
-    font-weight: 500;
+    font-weight: 700;
     overflow: hidden;
 /*     transition: 0.3s ease; */
 /*     background-color: blue; */
@@ -213,7 +213,7 @@ textarea:focus::-webkit-input-placeholder{
     float: left;
     background: transparent;
     border: none;
-    font-size: 1.16875em;
+    font-size: 1.165em;
     letter-spacing: 1.15px;
     font-family: 'Noto Sans KR', sans-serif;
     left: 41px;
@@ -223,7 +223,7 @@ textarea:focus::-webkit-input-placeholder{
     height: 48.4848%;
     min-height: 48.4848%;
     max-height: 48.4848%;
-    font-weight: 500;
+    font-weight: 700;
     overflow: hidden;
 }
 .normal_dialogue::placeholder{
