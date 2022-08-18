@@ -189,7 +189,7 @@ input:focus::-webkit-input-placeholder{
     height: 48.4848%;
     min-height: 48.4848%;
     max-height: 48.4848%;
-    font-weight: 700;
+    font-weight: 400;
     overflow: hidden;
 /*     transition: 0.3s ease; */
 /*     background-color: blue; */
@@ -223,7 +223,7 @@ textarea:focus::-webkit-input-placeholder{
     height: 48.4848%;
     min-height: 48.4848%;
     max-height: 48.4848%;
-    font-weight: 700;
+    font-weight: 500;
     overflow: hidden;
 }
 .normal_dialogue::placeholder{
