@@ -9,17 +9,43 @@
         width: 97%;
     }
     .select_bubble ul{
-        width: 270px;
+        width: 300px;
         font-size: 1em;
     }
     .name{
         left: 40px;
         font-size: 1em;
     }
+    .question{
+        font-size: 1em;
+        letter-spacing: 1.15px;
+/*         background-color: red; */
+        width: 94%;
+        left: 18px;
+        margin-top: 3.5px;
+        font-weight: 500;
+    }
     .dialogue, .normal_dialogue{
         left: 40px;
         margin-top: 37px;
         font-size: 0.968em;
+    }
+    .choice, .choice2, .choice3{
+        font-size: 0.93em;
+        letter-spacing: 1.15px;
+        left: 45px;
+        margin-top: 32.5px;
+        width: 88%;
+        min-width: 88%;
+        font-weight: 500;
+        overflow: hidden;
+/*         background-color: #0000ff6e; */
+    }
+    .choice2{
+        margin-top: 56px;
+    }
+    .choice3{
+        margin-top: 80px;
     }
     .export_btn{
         margin-top: 35px;
@@ -34,12 +60,15 @@
     }
     .select_bubble ul{
         width: 250px;
-        font-size: 0.95em;
+        font-size: 0.875em;
     }
     .name{
         left: 35px;
         font-size: 0.9em;
         width: 60%;
+    }
+    .question{
+        font-size: 0.985em;
     }
     .dialogue, .normal_dialogue{
         left: 35px;

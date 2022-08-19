@@ -88,7 +88,7 @@ span{
     height: 150px;
     transform: translateX(-50%);
 }
-.ascian_bubble_img{
+.ascian_bubble_img, .normal_bubble_img, .select_bubble_img{
     position: relative;
     float: left;
     width: 100%;
@@ -97,23 +97,11 @@ span{
 /*     background-color: gray; */
     display: none;
 }
-.ascian_bubble_img.show{
+.ascian_bubble_img.show, .normal_bubble_img.show, .select_bubble_img.show{
     display: block;
 }
-.ascian_bubble_img img, .normal_bubble_img img{
+.ascian_bubble_img img, .normal_bubble_img img, .select_bubble_img img{
     width: 100%;
-}
-.normal_bubble_img{
-    position: relative;
-    float: left;
-    width: 100%;
-    /* left: 50%;
-    transform: translateX(-50%); */
-/*     background-color: gray; */
-    display: none;
-}
-.normal_bubble_img.show{
-    display: block;
 }
 .btn_wrapper{
     position: relative;
@@ -170,8 +158,29 @@ input:focus::-webkit-input-placeholder{
     color:transparent;
     text-shadow: none;
 }
-.name.click{
+.name.click, .question.click{
     border: white;
+}
+.question{
+    position: absolute;
+    float: left;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.165em;
+    letter-spacing: 1.15px;
+    font-family: 'Noto Sans KR', sans-serif;
+/*     background-color: red; */
+    width: 85%;
+    left: 25px;
+    margin-top: 6px;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+/*     transition: 0.3s ease; */
+}
+.question::placeholder{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .dialogue{
     position: absolute;
@@ -205,7 +214,7 @@ textarea:focus::-webkit-input-placeholder{
     color:transparent;
     text-shadow: none;
 }
-.dialogue.click, .normal_dialogue.click{
+.dialogue.click, .normal_dialogue.click, .choice.click{
     border: white;
 }
 .normal_dialogue{
@@ -228,6 +237,44 @@ textarea:focus::-webkit-input-placeholder{
 }
 .normal_dialogue::placeholder{
     color: black;
+}
+.choice, .choice2, .choice3{
+    position: absolute;
+    float: left;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.165em;
+    letter-spacing: 1.15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    left: 60px;
+    margin-top: 44px;
+    width: 85%;
+    min-width: 85%;
+/*     height: 48.4848%;
+    min-height: 48.4848%;
+    max-height: 48.4848%; */
+    font-weight: 500;
+    overflow: hidden;
+/*     transition: 0.3s ease; */
+/*     background-color: #0000ff6e; */
+}
+.choice2{
+    margin-top: 75px;
+}
+.choice3{
+    margin-top: 106px;
+}
+.choice::placeholder, .choice2::placeholder, .choice3::placeholder{
+    color: white;
+}
+.choice:focus, .choice2:focus, .choice3:focus{
+    outline: none;
+    background-color: rgb(125 125 125 / 50%);
+}
+.choice:focus::-webkit-input-placeholder, .choice2:focus::-webkit-input-placeholder, .choice3:focus::-webkit-input-placeholder{
+    color: transparent;
+    text-shadow: none;
 }
 footer{
     position: relative;
