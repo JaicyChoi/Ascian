@@ -12,7 +12,8 @@ const bubble_check = document.querySelectorAll('.bubble_check');
 const ascian_bubble_img = document.querySelector('.ascian_bubble_img');
 const normal_bubble_img = document.querySelector('.normal_bubble_img');
 const select_bubble_img = document.querySelector('.select_bubble_img');
-const battle_bubble_img = document.querySelector('.battle_bubble_img');
+const battle_bubble_img1 = document.querySelector('.battle_bubble_img1');
+const battle_bubble_img2 = document.querySelector('.battle_bubble_img2');
 const capture_area = document.querySelector('.capture_area');
 let current_value = 'normal_bubble';
 
@@ -22,39 +23,58 @@ bubble_check.forEach(function(input){
     input.addEventListener('click', function(){
         if(input.value === 'normal_bubble'){
             capture_area.classList.remove('ascian_capture_area');
-            capture_area.classList.remove('battle_capture_area');
+            capture_area.classList.remove('battle_capture_area1');
+            capture_area.classList.remove('battle_capture_area2');
             capture_area.classList.add('normal_capture_area');
             ascian_bubble_img.classList.remove('show');
             select_bubble_img.classList.remove('show');
             normal_bubble_img.classList.add('show');
-            battle_bubble_img.classList.remove('show');
+            battle_bubble_img1.classList.remove('show');
+            battle_bubble_img2.classList.remove('show');
         }
         if(input.value === 'ascian_bubble'){
             capture_area.classList.add('ascian_capture_area');
-            capture_area.classList.remove('battle_capture_area');
+            capture_area.classList.remove('battle_capture_area1');
+            capture_area.classList.remove('battle_capture_area2');
             capture_area.classList.remove('normal_capture_area');
             ascian_bubble_img.classList.add('show');
             select_bubble_img.classList.remove('show');
             normal_bubble_img.classList.remove('show');
-            battle_bubble_img.classList.remove('show');
+            battle_bubble_img1.classList.remove('show');
+            battle_bubble_img2.classList.remove('show');
         }
         if(input.value === 'select_bubble'){
             capture_area.classList.remove('ascian_capture_area');
-            capture_area.classList.remove('battle_capture_area');
+            capture_area.classList.remove('battle_capture_area1');
+            capture_area.classList.remove('battle_capture_area2');
             capture_area.classList.add('normal_capture_area');
             ascian_bubble_img.classList.remove('show');
             select_bubble_img.classList.add('show');
             normal_bubble_img.classList.remove('show');
-            battle_bubble_img.classList.remove('show');
+            battle_bubble_img1.classList.remove('show');
+            battle_bubble_img2.classList.remove('show');
         }
-        if(input.value === 'battle_bubble'){
+        if(input.value === 'battle_bubble1'){
             capture_area.classList.remove('ascian_capture_area');
             capture_area.classList.remove('normal_capture_area');
-            capture_area.classList.add('battle_capture_area');
+            capture_area.classList.add('battle_capture_area1');
+            capture_area.classList.remove('battle_capture_area2');
             ascian_bubble_img.classList.remove('show');
             select_bubble_img.classList.remove('show');
             normal_bubble_img.classList.remove('show');
-            battle_bubble_img.classList.add('show');
+            battle_bubble_img1.classList.add('show');
+            battle_bubble_img2.classList.remove('show');
+        }
+        if(input.value === 'battle_bubble2'){
+            capture_area.classList.remove('ascian_capture_area');
+            capture_area.classList.remove('normal_capture_area');
+            capture_area.classList.remove('battle_capture_area1');
+            capture_area.classList.add('battle_capture_area2');
+            ascian_bubble_img.classList.remove('show');
+            select_bubble_img.classList.remove('show');
+            normal_bubble_img.classList.remove('show');
+            battle_bubble_img2.classList.add('show');
+            battle_bubble_img1.classList.remove('show');
         }
         current_value = input.value;
     });

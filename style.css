@@ -52,8 +52,8 @@ span{
     justify-content: space-between;
     left: 50%;
     transform: translateX(-50%);
-/*     background-color: green; */
-    width: 400px;
+    /* background-color: green; */
+    width: 550px;
     font-size: 1em;
     font-weight: 500;
 }
@@ -88,7 +88,7 @@ span{
     height: 150px;
     transform: translateX(-50%);
 }
-.battle_capture_area{
+.battle_capture_area1{
     position: relative;
     float: left;
 /*     background-color: red; */
@@ -97,7 +97,16 @@ span{
     height: 49px;
     transform: translateX(-50%);
 }
-.ascian_bubble_img, .normal_bubble_img, .select_bubble_img, .battle_bubble_img{
+.battle_capture_area2{
+    position: relative;
+    float: left;
+/*     background-color: red; */
+    left: 50%;
+    width: 648px;
+    height: 56px;
+    transform: translateX(-50%);
+}
+.ascian_bubble_img, .normal_bubble_img, .select_bubble_img, .battle_bubble_img1, .battle_bubble_img2{
     position: relative;
     float: left;
     width: 100%;
@@ -106,10 +115,10 @@ span{
 /*     background-color: gray; */
     display: none;
 }
-.ascian_bubble_img.show, .normal_bubble_img.show, .select_bubble_img.show, .battle_bubble_img.show{
+.ascian_bubble_img.show, .normal_bubble_img.show, .select_bubble_img.show, .battle_bubble_img1.show, .battle_bubble_img2.show{
     display: block;
 }
-.ascian_bubble_img img, .normal_bubble_img img, .select_bubble_img img, .battle_bubble_img img{
+.ascian_bubble_img img, .normal_bubble_img img, .select_bubble_img img, .battle_bubble_img1 img, .battle_bubble_img2 img{
     width: 100%;
 }
 .btn_wrapper{
@@ -155,7 +164,7 @@ span{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 /*     transition: 0.3s ease; */
 }
-.name::placeholder, .battle_name::placeholder{
+.name::placeholder, .battle_name::placeholder, .battle_name2::placeholder{
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -171,6 +180,23 @@ span{
     /* background-color: red; */
     width: 63.1911%;
     left: 5px;
+    margin-top: -2px;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* transition: 0.3s ease; */
+}
+.battle_name2{
+    position: absolute;
+    float: left;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 1.15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* background-color: red; */
+    width: 63.1911%;
+    left: 10px;
     margin-top: -2px;
     font-weight: 500;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -243,7 +269,7 @@ textarea:focus::-webkit-input-placeholder{
     color:transparent;
     text-shadow: none;
 }
-.dialogue.click, .normal_dialogue.click, .choice.click, .battle_dialogue.click{
+.dialogue.click, .normal_dialogue.click, .choice.click, .battle_dialogue.click, .battle_dialogue2.click{
     border: white;
 }
 .normal_dialogue{
@@ -264,7 +290,7 @@ textarea:focus::-webkit-input-placeholder{
     font-weight: 600;
     overflow: hidden;
 }
-.normal_dialogue::placeholder{
+.normal_dialogue::placeholder, .battle_dialogue::placeholder, .battle_dialogue2::placeholder{
     color: black;
 }
 .battle_dialogue{
@@ -285,8 +311,23 @@ textarea:focus::-webkit-input-placeholder{
     font-weight: 600;
     overflow: hidden;
 }
-.battle_dialogue::placeholder{
-    color: black;
+.battle_dialogue2{
+    position: absolute;
+    float: left;
+    background: transparent;
+    border: none;
+    font-size: 1.165em;
+    letter-spacing: 1.15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    left: 25px;
+    margin-top: 15px;
+    width: 91%;
+    min-width: 91%;
+    height: 0;
+    min-height: 48.4848%;
+    max-height: 48.4848%;
+    font-weight: 600;
+    overflow: hidden;
 }
 .choice, .choice2, .choice3{
     position: absolute;
