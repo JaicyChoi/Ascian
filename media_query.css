@@ -9,7 +9,7 @@
         width: 97%;
     }
     .select_bubble ul{
-        width: 300px;
+        width: 400px;
         font-size: 1em;
     }
     .name{
@@ -29,6 +29,13 @@
         left: 40px;
         margin-top: 37px;
         font-size: 0.968em;
+    }
+    .battle_dialogue{
+        margin-top:13px;
+        font-size: 0.968em;
+    }
+    .battle_name{
+        font-size: 0.7em;
     }
     .choice, .choice2, .choice3{
         font-size: 0.93em;
@@ -59,7 +66,7 @@
         font-size: 2.3em;
     }
     .select_bubble ul{
-        width: 250px;
+        width: 350px;
         font-size: 0.875em;
     }
     .name{
@@ -79,6 +86,13 @@
         height: 44%;
         min-height: 44%;
         max-height: 44%;
+    }
+    .battle_dialogue{
+        margin-top:12px;
+        font-size: 0.9em;
+    }
+    .battle_name{
+        font-size: 0.675em;
     }
     .export_btn{
         margin-top: 15px;

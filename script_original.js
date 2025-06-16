@@ -12,7 +12,6 @@ const bubble_check = document.querySelectorAll('.bubble_check');
 const ascian_bubble_img = document.querySelector('.ascian_bubble_img');
 const normal_bubble_img = document.querySelector('.normal_bubble_img');
 const select_bubble_img = document.querySelector('.select_bubble_img');
-const battle_bubble_img = document.querySelector('.battle_bubble_img');
 const capture_area = document.querySelector('.capture_area');
 let current_value = 'normal_bubble';
 
@@ -22,39 +21,24 @@ bubble_check.forEach(function(input){
     input.addEventListener('click', function(){
         if(input.value === 'normal_bubble'){
             capture_area.classList.remove('ascian_capture_area');
-            capture_area.classList.remove('battle_capture_area');
             capture_area.classList.add('normal_capture_area');
             ascian_bubble_img.classList.remove('show');
             select_bubble_img.classList.remove('show');
             normal_bubble_img.classList.add('show');
-            battle_bubble_img.classList.remove('show');
         }
         if(input.value === 'ascian_bubble'){
             capture_area.classList.add('ascian_capture_area');
-            capture_area.classList.remove('battle_capture_area');
             capture_area.classList.remove('normal_capture_area');
             ascian_bubble_img.classList.add('show');
             select_bubble_img.classList.remove('show');
             normal_bubble_img.classList.remove('show');
-            battle_bubble_img.classList.remove('show');
         }
         if(input.value === 'select_bubble'){
             capture_area.classList.remove('ascian_capture_area');
-            capture_area.classList.remove('battle_capture_area');
             capture_area.classList.add('normal_capture_area');
             ascian_bubble_img.classList.remove('show');
             select_bubble_img.classList.add('show');
             normal_bubble_img.classList.remove('show');
-            battle_bubble_img.classList.remove('show');
-        }
-        if(input.value === 'battle_bubble'){
-            capture_area.classList.remove('ascian_capture_area');
-            capture_area.classList.remove('normal_capture_area');
-            capture_area.classList.add('battle_capture_area');
-            ascian_bubble_img.classList.remove('show');
-            select_bubble_img.classList.remove('show');
-            normal_bubble_img.classList.remove('show');
-            battle_bubble_img.classList.add('show');
         }
         current_value = input.value;
     });
@@ -87,15 +71,8 @@ function check(){
 }
 function check2(){
     if(textarea.value.length > 30){
-        alert("공백 포함 최대 30자까지 입력 가능합니다.");
+        alert("공백 포함 최대 100자까지 입력 가능합니다.");
         textarea.value=textarea.value.substring(0, 30);
-        textarea.focus();
-    }
-}
-function check3(){
-    if(textarea.value.length > 32){
-        alert("공백 포함 최대 32자까지 입력 가능합니다.");
-        textarea.value=textarea.value.substring(0, 32);
         textarea.focus();
     }
 }
